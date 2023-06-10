@@ -17,11 +17,7 @@ Se presenta el repositorio como la suma de entregas parciales organizadas como "
 ##*Casos de uso*
 
 | Caso de Uso | Description | Implementado en |
-<<<<<<< HEAD
 | --- | --- | --- |
-=======
-| --- | --- |
->>>>>>> 04441a92addb5a948280a3a7904417c0948e0487
 | Inicio | Página de inicio con información relevante sobre el proyecto | Ejercicio 1 |
 | Contacto | Formulario de contacto para realizar consultas | Ejercicio 1 |
 | Crear Capacitacion | Formulario para crear una capacitación en el sistema | Ejercicio 1 |
