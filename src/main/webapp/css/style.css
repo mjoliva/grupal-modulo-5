@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100%;
+}
+
+
+body:not(#main){
+	background: hsla(236, 100%, 8%, 1);
+	background: linear-gradient(0deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458e", GradientType=1 );
+}
+
+#main {
+	height: 100%;
+	background-color: orange;
+	background-image: url("/grupal1m5/images/hero-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	color: white;	
+}
