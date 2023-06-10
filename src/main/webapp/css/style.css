@@ -21,8 +21,8 @@ body:not(#main){
 
 #main {
 	height: 100%;
-	background-color: orange;
-	background-image: url("/grupal1m5/images/hero-bg.jpg");
+	background: linear-gradient(0deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+	background-image: url("/grupal-modulo-5/images/hero-bg.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: none;

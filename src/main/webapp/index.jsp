@@ -12,7 +12,7 @@
 <body class="text-light">
 	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
 	  	<div class="container-fluid">
-	    	<a class="navbar-brand" href="/grupal1m5/index.jsp">Inicio</a>
+	    	<a class="navbar-brand" href="/grupal-modulo-5/index.jsp">Inicio</a>
 	    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      		<span class="navbar-toggler-icon"></span>
 	    	</button>
@@ -23,9 +23,9 @@
 	            			Acciones
 	          			</a>
 		          		<ul class="dropdown-menu">
-		            		<li><a class="dropdown-item" href="/grupal1m5/views/Contacto.jsp">Contacto</a></li>
+		            		<li><a class="dropdown-item" href="/grupal-modulo-5/views/Contacto.jsp">Contacto</a></li>
 		            		<li><hr class="dropdown-divider"></li>
-		            		<li><a class="dropdown-item" href="/grupal1m5/views/CrearCapacitacion.jsp">Crear Capacitacion</a></li>
+		            		<li><a class="dropdown-item" href="/grupal-modulo-5/views/CrearCapacitacion.jsp">Crear Capacitacion</a></li>
 		            		<li><hr class="dropdown-divider"></li>
 		            		<li><a class="dropdown-item" href="#">Algo pasará acá</a></li>
 		          		</ul>
