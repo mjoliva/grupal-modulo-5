@@ -14,7 +14,7 @@ Se presenta el repositorio como la suma de entregas parciales organizadas como "
 
 <hr>
 
-##*Casos de uso*
+## *Casos de uso*
 
 | Caso de Uso | Description | Implementado en |
 | --- | --- | --- |
