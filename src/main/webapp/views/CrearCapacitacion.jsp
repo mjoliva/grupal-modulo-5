@@ -18,10 +18,10 @@
 	<main class="container">
 	<!-- se supone que tiene que tener la interfaz para realizar esta tarea -->
 	  	<h1>Crear capacitación</h1>
-	  	<a href="/grupal1m5/index.jsp">Ir al Inicio</a>
+	  	<a href="/grupal-modulo-5/index.jsp">Ir al Inicio</a>
 	  	<div class="container">
 <!-- 			<form action="CrearCapacitacion" method="POST"> -->
-			<form action="/CrearCapacitacion" method="post" id="formCreateCapacitacion">
+			<form action="/grupal-modulo-5/CrearCapacitacion" method="post" id="formCreateCapacitacion">
 		  		<div class="mb-3">
 		  			<label for="rutCliente" class="form-label">Rut Cliente</label>
 		  			<input type="text" class="form-control" id="rut" name="rut">

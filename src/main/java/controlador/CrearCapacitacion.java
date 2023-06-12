@@ -37,5 +37,6 @@ public class CrearCapacitacion extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Hola en Crear capacitacion con POST");
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}
 }
