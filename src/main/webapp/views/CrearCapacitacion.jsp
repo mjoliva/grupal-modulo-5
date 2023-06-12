@@ -18,7 +18,7 @@
 	<main class="container">
 	<!-- se supone que tiene que tener la interfaz para realizar esta tarea -->
 	  	<h1>Crear capacitación</h1>
-	  	<a href="/grupal-modulo-5/index.jsp">Ir al Inicio</a>
+	  	
 	  	<div class="container">
 <!-- 			<form action="CrearCapacitacion" method="POST"> -->
 			<form action="/grupal-modulo-5/CrearCapacitacion" method="post" id="formCreateCapacitacion">
