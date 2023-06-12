@@ -39,7 +39,7 @@ public class Contacto extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("Entrando en /Contacto con POST");
+		System.out.println("Entrando en /Contacto con POST como testimonio del funcionamiento del servlet:");
 		System.out.println(request.getParameterNames()); // como recorrer.
 		String nombre = request.getParameter("username");
 		String mail = request.getParameter("usermail");
