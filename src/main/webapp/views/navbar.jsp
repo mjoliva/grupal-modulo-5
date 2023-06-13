@@ -12,19 +12,19 @@
             			Opciones
           			</a>
 	          		<ul class="dropdown-menu">
-	            		<li><a class="dropdown-item" href="/grupal-modulo-5/views/Contacto.jsp">Contacto</a></li>
+	            		<li><a class="dropdown-item" href="../grupal-modulo-5/views/contacto.jsp">Contacto</a></li>
 	            		<li><hr class="dropdown-divider"></li>
-	            		<li><a class="dropdown-item" href="/grupal-modulo-5/CrearCapacitacion">Crear Capacitacion</a></li>
+	            		<li><a class="dropdown-item" href="../grupal-modulo-5/views/crearCapacitacion.jsp">Crear Capacitacion</a></li>
 	            		<li><hr class="dropdown-divider"></li>
-	            		<li><a class="dropdown-item" href="/grupal-modulo-5/ListarCapacitaciones">Listar Capacitaciones</a></li>
+	            		<li><a class="dropdown-item" href="../grupal-modulo-5/views/listarCapacitaciones.jsp">Listar Capacitaciones</a></li>
 	          		</ul>
         		</li>
         		<li class="nav-item">
-          			<a class="nav-link active" aria-current="page" href="/grupal-modulo-5/Login">Login</a>
+          			<a class="nav-link active" aria-current="page" href="/grupal-modulo-5/views/login.jsp">Login</a>
         		</li>
-<!--         		<li class="nav-item"> -->
-<!--          			<a class="nav-link" href="#">No se qué hago</a> -->
-<!--         		</li> -->
+        		<li class="nav-item">
+         			<a class="nav-link" href="#">No se qué hago</a>
+        		</li>
 <!-- 	        		<li class="nav-item"> -->
 <!-- 	          			<a class="nav-link disabled">Disabled</a> -->
 <!-- 	        		</li> -->

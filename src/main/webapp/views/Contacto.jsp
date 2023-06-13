@@ -1,20 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<% if (request.getSession() == null) {
-	request.getSession().invalidate();
-	request.getRequestDispatcher("/Login").forward(request, response);	
-	} else {
-		System.out.println("Khe pasa!");
+<% if (request.getSession().getAttribute("usuario") == null) {
+		request.getRequestDispatcher("/views/login.jsp").forward(request, response);	
 	}
 %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%@ include file='/views/HeadMetaLink.jsp' %>
+  <%@ include file='/views/headMetaLink.jsp' %>
+  
   <title>BeSafe Contacto</title>
 </head>
 <body class="text-light">
 	
-	<%@ include file='/views/Navbar.jsp' %>
+	<%@ include file='/views/navbar.jsp' %>
 	
     <main class="container text-light">
 	   <h1>Contacto</h1>

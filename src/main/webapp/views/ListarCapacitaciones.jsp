@@ -1,12 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<% if (request.getSession().getAttribute("usuario") == null) {
+		request.getRequestDispatcher("/views/login.jsp").forward(request, response);	
+	}
+%>
 <!DOCTYPE html>
 <html>
 <head>
-	<%@ include file='/views/HeadMetaLink.jsp' %>
+	<%@ include file='/views/headMetaLink.jsp' %>
 	<title>BeSafe Listar Capacitaciones</title>
 </head>
 <body>
-	<%@ include file='/views/Navbar.jsp' %>
+	<%@ include file='/views/navbar.jsp' %>
 	
 	<main class="container">
 		<h1>Vista temporal para Listar Capacitaciones</h1>

@@ -29,11 +29,20 @@ public class Contacto extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		// validar que existe el atributo usuario y si no, redigir a login.jsp
+		if (request.getSession().getAttribute("usuario") == null) {
+			//request.getSession().invalidate();
+			request.getRequestDispatcher("/grupal-modulo-5/login.jsp").forward(request, response);	
+			} else {
+				System.out.println("Khe pasa!");
+			}
+		
+		// corregir desde acá en adelante
 		HttpSession session = request.getSession(false);
 		
 		if (session == null) {
 			System.out.println("la sesión no es válida");
-			session.invalidate();
+			//session.invalidate();
 			RequestDispatcher view = request.getRequestDispatcher("/views/Login.jsp");
 			view.forward(request, response);
 		} else {

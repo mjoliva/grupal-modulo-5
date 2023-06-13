@@ -11,7 +11,7 @@
 </head>
 <body class="text-light" id="index">
 
-	<%@ include file='/views/Navbar.jsp' %>
+	<%@ include file='/views/navbar.jsp' %>
 	
 	<main class="container-fluid" id="main">
 		<h1>Asesores en riesgos laborales</h1>

@@ -36,7 +36,6 @@ public class Login extends HttpServlet {
 		
 		if (session == null) {
 			System.out.println("Debes iniciar sesión primero");
-			session.invalidate();
 			RequestDispatcher view = request.getRequestDispatcher("/views/Login.jsp");
 			view.forward(request, response);
 		} else {
@@ -51,7 +50,15 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		HttpSession session = request.getSession();
+		// 
+		
+		// name="rut"
+		// name="password"
+		System.out.println(request.getParameter("rut"));
+		System.out.println(request.getParameter("password"));
+		
+		// si valida correctamente, a Inicio
+		// si no, quedarse en Login
 		doGet(request, response);
 	}
 

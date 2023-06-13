@@ -1,16 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<% if (request.getSession().getAttribute("usuario") == null) {
+		request.getRequestDispatcher("/views/login.jsp").forward(request, response);	
+	} 
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <%@ include file='/views/HeadMetaLink.jsp' %>
+  <%@ include file='/views/headMetaLink.jsp' %>
   
   <title>Crear capacitacion</title>
 </head>
 
 <body  class="text-light">
 
-	<%@ include file='/views/Navbar.jsp' %>
+	<%@ include file='/views/navbar.jsp' %>
 	
 	<main class="container">
 	  	<h1>Crear capacitación</h1>

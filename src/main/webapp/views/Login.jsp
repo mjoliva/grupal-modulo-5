@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%@ include file='/views/HeadMetaLink.jsp' %>
+	<%@ include file='/views/headMetaLink.jsp' %>
 	<title>BeSafe Login</title>
 </head>
 
 <body class="container">
-	<form action="/grupal-modulo-5/Login" method="post" id="formLogin">
+	<form action="controlador/Login" method="post" id="formLogin">
   		<div class="mb-3">
-  			<label for="rutCliente" class="form-label">Rut Usuario:</label>
-  			<input type="text" class="form-control" id="rut" name="rut">
+  			<label for="rutCliente" class="form-label">Usuario:</label>
+  			<input type="text" class="form-control" id="rut" name="rut" pattern="[\w]{5}" placeholder="nombre de usuario 5 caracteres" required>
   		</div>
   		<div class="mb-3">
 	    	<label for="clave" class="form-label">Password:</label>
-	    	<input type="password" class="form-control" id="password" name="password">
+	    	<input type="password" class="form-control" id="password" name="password" placeholder="clave de usuario" required>
   		</div>
   		
   		<button class="btn btn-outline-light" type="submit" id="submitBtnLogin">Iniciar</button>
