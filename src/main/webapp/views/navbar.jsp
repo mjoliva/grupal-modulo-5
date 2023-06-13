@@ -9,22 +9,22 @@
       		<ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
         		<li class="nav-item dropdown">
           			<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            			Acciones
+            			Opciones
           			</a>
 	          		<ul class="dropdown-menu">
 	            		<li><a class="dropdown-item" href="/grupal-modulo-5/views/Contacto.jsp">Contacto</a></li>
 	            		<li><hr class="dropdown-divider"></li>
-	            		<li><a class="dropdown-item" href="/grupal-modulo-5/views/CrearCapacitacion.jsp">Crear Capacitacion</a></li>
+	            		<li><a class="dropdown-item" href="/grupal-modulo-5/CrearCapacitacion">Crear Capacitacion</a></li>
 	            		<li><hr class="dropdown-divider"></li>
-	            		<li><a class="dropdown-item" href="#">Algo pasará acá</a></li>
+	            		<li><a class="dropdown-item" href="/grupal-modulo-5/ListarCapacitaciones">Listar Capacitaciones</a></li>
 	          		</ul>
         		</li>
         		<li class="nav-item">
-          			<a class="nav-link active" aria-current="page" href="#">Login</a>
+          			<a class="nav-link active" aria-current="page" href="/grupal-modulo-5/Login">Login</a>
         		</li>
-        		<li class="nav-item">
-         			<a class="nav-link" href="#">No se qué hago</a>
-        		</li>
+<!--         		<li class="nav-item"> -->
+<!--          			<a class="nav-link" href="#">No se qué hago</a> -->
+<!--         		</li> -->
 <!-- 	        		<li class="nav-item"> -->
 <!-- 	          			<a class="nav-link disabled">Disabled</a> -->
 <!-- 	        		</li> -->

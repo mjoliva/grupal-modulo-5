@@ -2,25 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
+
+  <%@ include file='/views/HeadMetaLink.jsp' %>
   
   <title>Crear capacitacion</title>
 </head>
+
 <body  class="text-light">
 
-	<%@ include file='/views/navbar.jsp' %>
+	<%@ include file='/views/Navbar.jsp' %>
 	
 	<main class="container">
-	<!-- se supone que tiene que tener la interfaz para realizar esta tarea -->
 	  	<h1>Crear capacitación</h1>
 	  	
 	  	<div class="container">
-<!-- 			<form action="CrearCapacitacion" method="POST"> -->
 			<form action="/grupal-modulo-5/CrearCapacitacion" method="post" id="formCreateCapacitacion">
 		  		<div class="mb-3">
 		  			<label for="rutCliente" class="form-label">Rut Cliente</label>

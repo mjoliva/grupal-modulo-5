@@ -8,19 +8,15 @@ html {
 	height: 100vh;
 }
 
-body {
-	height: 100%;
-}
 
-
-body:not(#main){
+body:not(#index){
 	background: hsla(236, 100%, 8%, 1);
 	background: linear-gradient(0deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458e", GradientType=1 );
 }
 
-#main {
-	height: 100%;
+body {
+/* 	height: 100%; */
 	background: linear-gradient(0deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
 	background-image: url("/grupal-modulo-5/images/hero-bg.jpg");
 	background-position: center;

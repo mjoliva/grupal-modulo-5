@@ -1,14 +1,13 @@
 package controlador;
 
 import java.io.IOException;
-import java.util.Collection;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Contacto
@@ -30,8 +29,21 @@ public class Contacto extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		RequestDispatcher view = request.getRequestDispatcher("index.jsp");
-		view.forward(request, response); 
+		HttpSession session = request.getSession(false);
+		
+		if (session == null) {
+			System.out.println("la sesión no es válida");
+			session.invalidate();
+			RequestDispatcher view = request.getRequestDispatcher("/views/Login.jsp");
+			view.forward(request, response);
+		} else {
+			System.out.println("la sesión es válida");
+			RequestDispatcher view = request.getRequestDispatcher("/views/Contacto.jsp");
+			view.forward(request, response);
+		}
+		
+//		RequestDispatcher view = request.getRequestDispatcher("index.jsp");
+//		view.forward(request, response); 
 	}
 
 	/**
@@ -40,12 +52,11 @@ public class Contacto extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		System.out.println("Entrando en /Contacto con POST como testimonio del funcionamiento del servlet:");
-		System.out.println(request.getParameterNames()); // como recorrer.
+		
 		String nombre = request.getParameter("username");
 		String mail = request.getParameter("usermail");
 		
 		System.out.println(nombre + " " + mail);
 		doGet(request, response);
 	}
-
 }

@@ -1,19 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<% if (request.getSession() == null) {
+	request.getSession().invalidate();
+	request.getRequestDispatcher("/Login").forward(request, response);	
+	} else {
+		System.out.println("Khe pasa!");
+	}
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
-
-  <title>Contacto</title>
+  <%@ include file='/views/HeadMetaLink.jsp' %>
+  <title>BeSafe Contacto</title>
 </head>
 <body class="text-light">
 	
-	<%@ include file='/views/navbar.jsp' %>
+	<%@ include file='/views/Navbar.jsp' %>
 	
     <main class="container text-light">
 	   <h1>Contacto</h1>
@@ -24,7 +25,7 @@
 		  	</div>
 		  	<div class="mb-3">
 		    	<label for="usermail" class="form-label">Email:</label>
-		    	<input type="mail" class="form-control" id="mail" name="usermail">
+		    	<input type="email" class="form-control" id="mail" name="usermail">
 	  		</div>
 	  		<div class="mb-3">
 		    	<label for="usermessage" class="form-label">Mensaje:</label>

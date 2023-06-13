@@ -27,7 +27,7 @@ public class CrearCapacitacion extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher view = request.getRequestDispatcher("/views/CrearCapacitacion.html");
+		RequestDispatcher view = request.getRequestDispatcher("views/CrearCapacitacion.jsp");
 		view.forward(request, response); 
 	}
 	
