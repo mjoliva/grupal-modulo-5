@@ -7,7 +7,7 @@
 </head>
 
 <body class="container">
-	<form action="controlador/Login" method="post" id="formLogin">
+	<form action="Login" method="post" id="formLogin">
   		<div class="mb-3">
   			<label for="rutCliente" class="form-label">Usuario:</label>
   			<input type="text" class="form-control" id="rut" name="rut" pattern="[\w]{5}" placeholder="nombre de usuario 5 caracteres" required>
